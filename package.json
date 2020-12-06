@@ -1,0 +1,29 @@
+{
+  "name": "dynamodb-streams",
+  "version": "1.0.0",
+  "description": " dynamodb stream processor snapshots dynamodb chnages of interest to s3",
+  "main": "ddbstream",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kayvank/dynamodb-stream.git"
+  },
+  "keywords": [
+    "python",
+    "dynamodb",
+    "stream",
+    "lambda",
+  ],
+  "author": "Kayvan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kayvank/dynamodb-stream"
+  },
+  "homepage": "https://github.com/kayvank",
+  "dependencies": {},
+  "devDependencies": {
+    "serverless-python-requirements": "^5.1.0"
+  }
+}

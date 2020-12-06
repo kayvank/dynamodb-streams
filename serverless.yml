@@ -1,0 +1,39 @@
+service: dynamodb-stream
+
+plugins:
+  - serverless-python-requirements
+  
+provider:
+  name: aws
+  region: us-east-2
+  role: arn:aws:iam::xxxxx:role/ddb-stream-lambda
+  runtime: python3.8
+  logRetentionInDays: 7 
+  deploymentBucket:
+    name: dev-repository
+
+
+package:
+  exclude:
+    - docs/**
+    - test/**
+    - .git/**
+    - .gitignore
+    - .circleci/**
+    - venv/**
+    - node_modules/**
+    - __pycache__/**
+    - .pytest_cache/**
+    - .envrc
+    - README.md
+    - createProject.sh
+    - package.json
+    - package-lock.json
+    - yarn.lock
+    - Pipfile
+    - Pipfile.lock
+    - .pilintrc
+
+functions:
+  ddbstream:
+    handler: app.main
