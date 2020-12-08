@@ -39,16 +39,5 @@ class TestStramProcessor(unittest.TestCase):
         logging.info(result)
         self.assertTrue(len(result) == 1)
 
-    # def test_handler_function(self):
-    #     """ poor man integration test
-    #     given complete dynamodb record
-    #     verify firehose insert occured
-    #     """
-    #     event = json.loads(self.lines[1])
-    #     result = m.main(event, "test-context")
-    #     logging.info(result)
-    #     self.assertTrue(True)
-
-
 if __name__ == "__main__":
     unittest.main()
