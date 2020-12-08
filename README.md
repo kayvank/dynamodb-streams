@@ -1,7 +1,7 @@
 dynamodb-streams
 ---
 
-dynamodb-streams is a python3 serverless project that persistes  dynamodb changes of interest to AWS s3
+dynamodb-streams is a python3 serverless project with CircleCi that persistes  dynamodb changes of interest to AWS s3
 
 
 ## Intallation
